@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Outfit:wght@400;700&display=swap");
+
+$light-red: hsl(6, 100%, 98%);
+$bright-red: hsl(1, 62%, 67%);
+$orangey-yellow: hsl(42, 100%, 97%);
+$bright-yellow: hsl(39, 93%, 61%);
+$green-teal: hsl(180, 44%, 96%);
+$bright-teal: hsl(165, 53%, 41%);
+$cobalt-blue: hsl(240, 71%, 97%);
+$bright-blue: hsl(238, 48%, 41%);
+
+$white: hsl(0, 0%, 100%);
+$pale-blue: hsl(273, 6%, 70%);
+$light-lavender: hsl(241, 100%, 89%);
+$dark-gray-blue: hsl(224, 30%, 27%);
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Hanken Grotesk", sans-serif;
+    .card {
+        width: 670px;
+        height: 460px;
+        display: flex;
+        border-radius: 30px;
+        box-shadow: 8px 10px 9px 1px rgba(0, 0, 0, 0.11);
+        -webkit-box-shadow: 8px 10px 9px 1px rgba(0, 0, 0, 0.11);
+        -moz-box-shadow: 8px 10px 9px 1px rgba(0, 0, 0, 0.11);
+    }
+    .result-card {
+        border-radius: 30px;
+        width: 50%;
+        background: linear-gradient(
+            0deg,
+            hsl(241, 81%, 54%),
+            hsl(252, 100%, 67%)
+        );
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $light-lavender;
+        padding: 30px 40px;
+        .title {
+            font-weight: 700;
+            font-size: x-large;
+        }
+        .result-number {
+            height: 180px;
+            width: 180px;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(
+                0deg,
+                hsla(241, 72%, 46%, 0),
+                hsla(256, 72%, 46%, 1)
+            );
+            margin: 20px 0;
+            .main {
+                color: $white;
+                font-size: 65px;
+                font-weight: 800;
+            }
+        }
+        .description {
+            text-align: center;
+            font-size: 18px;
+            .header {
+                font-size: 28px;
+                font-weight: 500;
+                color: $white;
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .summary-card {
+        width: 50%;
+        padding: 35px;
+        color: $dark-gray-blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .title {
+            font-weight: 700;
+            font-size: x-large;
+        }
+        .scores {
+            .score {
+                display: flex;
+                background-color: cornflowerblue;
+                height: 50px;
+                margin: 17px 0;
+                border-radius: 10px;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 15px;
+                font-weight: 600;
+                .text {
+                    display: flex;
+                    .icon {
+                        margin-right: 10px;
+                    }
+                }
+                &.reaction {
+                    background-color: $light-red;
+                    .text {
+                        color: $bright-red;
+                    }
+                }
+                &.memory {
+                    background-color: $orangey-yellow;
+                    .text {
+                        color: $bright-yellow;
+                    }
+                }
+                &.verbal {
+                    background-color: $green-teal;
+                    .text {
+                        color: $bright-teal;
+                    }
+                }
+                &.visual {
+                    background-color: $cobalt-blue;
+                    .text {
+                        color: $bright-blue;
+                    }
+                }
+            }
+            .result {
+                display: flex;
+                .score-final {
+                    margin-right: 5px;
+                }
+                .out-of {
+                    color: $pale-blue;
+                }
+            }
+        }
+        button {
+            width: 100%;
+            background-color: $dark-gray-blue;
+            color: $light-lavender;
+            border: none;
+            height: 45px;
+            border-radius: 50px;
+            font-size: 15px;
+            font-weight: 600;
+        }
+    }
+}
