@@ -17,7 +17,7 @@ QR frontend challenge from Frontend Mentor
 
 ### Screenshot
 
-![](./src/images/Screenshot_1.png)
+![](./src/assets/images/Screenshot_1.png)
 
 ### Links
 
