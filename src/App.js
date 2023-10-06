@@ -41,11 +41,9 @@ const getAverage = (data) => {
 function App() {
     return (
         <div className="container">
-            {/* {console.log(data)} */}
-
-            <div className="card">
+            <main className="card">
                 <div className="result-card">
-                    <div className="title">Your Result</div>
+                    <h1 className="title">Your Result</h1>
                     <div className="result-number">
                         <div className="main">{getAverage(data)}</div>
                         <div className="secondary">of 100</div>
@@ -83,76 +81,10 @@ function App() {
                                 </div>{" "}
                             </div>
                         ))}
-                        {/* 
-                        <div className="score reaction">
-                            {" "}
-                            <div className="text">
-                                {" "}
-                                <img
-                                    src={iconReaction}
-                                    className="icon"
-                                    alt="icon"
-                                />
-                                Reaction
-                            </div>{" "}
-                            <div className="result">
-                                <div className="score-final">80 </div>
-                                <div className="out-of">/ 100</div>
-                            </div>{" "}
-                        </div>
-                        <div className="score memory">
-                            {" "}
-                            <div className="text">
-                                {" "}
-                                <img
-                                    src={iconMemory}
-                                    className="icon"
-                                    alt="icon"
-                                />
-                                Memory
-                            </div>{" "}
-                            <div className="result">
-                                {" "}
-                                <div className="score-final">80 </div>
-                                <div className="out-of">/ 100</div>
-                            </div>{" "}
-                        </div>
-                        <div className="score verval">
-                            <div className="text">
-                                {" "}
-                                <img
-                                    src={iconVerval}
-                                    className="icon"
-                                    alt="icon"
-                                />
-                                Verval
-                            </div>
-                            <div className="result">
-                                {" "}
-                                <div className="score-final">80 </div>
-                                <div className="out-of">/ 100</div>
-                            </div>{" "}
-                        </div>
-                        <div className="score visual">
-                            <div className="text">
-                                {" "}
-                                <img
-                                    src={iconVisual}
-                                    className="icon"
-                                    alt="icon"
-                                />
-                                Visual
-                            </div>
-                            <div className="result">
-                                {" "}
-                                <div className="score-final">80 </div>
-                                <div className="out-of">/ 100</div>
-                            </div>{" "}
-                        </div> */}
                     </div>
                     <button>Continue</button>
                 </div>
-            </div>
+            </main>
         </div>
     );
 }
